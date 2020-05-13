@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1169155830293864158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1169155830293864144}
+  - component: {fileID: 1169155830293864145}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1169155830293864144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169155830293864158}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.48737955, y: 0.2183814, z: 56.058594}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1169155830293864145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169155830293864158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beae791182ad3ff40a112714d5cc707b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Acierto
+    clip: {fileID: 8300000, guid: 3560fc484d144854b96a03b65eeb90b9, type: 3}
+    loop: 0
+    audioSource: {fileID: 0}
+    volume: 0.1
+    pitch: 1
+  - name: Fallo
+    clip: {fileID: 8300000, guid: 1c772cca1303a17419a745a519ef4700, type: 3}
+    loop: 0
+    audioSource: {fileID: 0}
+    volume: 0.1
+    pitch: 1
+  - name: Fondo
+    clip: {fileID: 8300000, guid: bfd1d2ad632139944b7467e780f7ebfc, type: 3}
+    loop: 1
+    audioSource: {fileID: 0}
+    volume: 0.07
+    pitch: 1
