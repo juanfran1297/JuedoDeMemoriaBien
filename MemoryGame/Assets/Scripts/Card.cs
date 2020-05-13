@@ -43,22 +43,29 @@ public class Card : MonoBehaviour
 
     public void FlipCard()
     {
-        if(state == 0)
+        if (doNot)
         {
-            state = 1;
+            return;
         }
-        else if(state == 1)
+        else
         {
-            state = 0;
-        }
+            if (state == 0)
+            {
+                state = 1;
+            }
+            else if (state == 1)
+            {
+                state = 0;
+            }
 
-        if (state == 0 && !doNot)
-        {
-            GetComponent<Image>().sprite = cardBack;
-        }
-        else if(state == 1 && !doNot)
-        {
-            GetComponent<Image>().sprite = cardFace;
+            if (state == 0 && !doNot)
+            {
+                GetComponent<Image>().sprite = cardBack;
+            }
+            else if (state == 1 && !doNot)
+            {
+                GetComponent<Image>().sprite = cardFace;
+            }
         }
     }
 
